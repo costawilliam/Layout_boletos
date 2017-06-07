@@ -18,3 +18,13 @@ C:\Users\costawilliam\Documents\Visual Studio 2017\Projects\Layout_boletos\Layou
 C:\Users\costawilliam\Documents\Visual Studio 2017\Projects\Layout_boletos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.xml
 C:\Users\costawilliam\Documents\Visual Studio 2017\Projects\Layout_boletos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.pdb
 C:\Users\costawilliam\Documents\Visual Studio 2017\Projects\Layout_boletos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.vbprojResolveAssemblyReference.cache
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\bin\Debug\Layout_boletos.exe
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\bin\Debug\Layout_boletos.pdb
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\bin\Debug\Layout_boletos.xml
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.vbprojResolveAssemblyReference.cache
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.Layout_boletos.resources
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.Resources.resources
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.vbproj.GenerateResource.Cache
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.exe
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.xml
+C:\Users\costawilliam\Source\Repos\Layout_boletos\Layout_boletos\obj\Debug\Layout_boletos.pdb

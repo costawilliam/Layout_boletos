@@ -21,7 +21,6 @@ Public Class Layout_boletos
         lbQtCaracteres.Text = tbValor.TextLength
         tbLayout.Text = "Layout_Boletos"
 
-
         ListCampos.Scrollable = True
         ListCampos.View = View.Details
 
@@ -33,10 +32,6 @@ Public Class Layout_boletos
         For Each col As ColumnHeader In ListCampos.Columns
             col.Width = 800
         Next
-
-
-
-
     End Sub
 
     Public Sub autoSave()
@@ -56,7 +51,6 @@ Public Class Layout_boletos
         Catch ex As Exception
             MessageBox.Show("Erro ao salvar automaticamente!" & vbCrLf & "   Verifique se o usuário possui permissões", "Erro ao salver", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-
         salvar.Close()
         salvar.Dispose()
     End Sub
@@ -66,10 +60,9 @@ Public Class Layout_boletos
         If tbValor.TextLength = 0 Then
             MessageBox.Show("Preencha o valor corretamente", "Incluir item", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
-
             AdicionaItemLista()
             tbValor.Clear()
-            'cbTipo.Focus()
+            cbTipo.Focus()
 
             If ListCampos.Items.Count Mod 5 = 0 Then
                 autoSave()
@@ -78,7 +71,6 @@ Public Class Layout_boletos
     End Sub
 
     Public Sub AdicionaItemLista()
-
         Dim item As String
         Try
             item = cbSecao.SelectedIndex.ToString + cbTipo.SelectedItem.ToString + "=" + tbValor.Text
@@ -115,7 +107,6 @@ Public Class Layout_boletos
             itemSelecionado = ListCampos.SelectedIndices(0)
             itemAlterar = itemSelecionado - 1
 
-
             valorAtual = ListCampos.Items(itemAlterar).Text
             valorNovo = ListCampos.Items(itemSelecionado).Text
 
@@ -125,12 +116,9 @@ Public Class Layout_boletos
             ListCampos.Items(itemSelecionado).Selected = False
             ListCampos.Items(itemAlterar).Selected = True
             ListCampos.Select()
-
         Catch ex As Exception
 
         End Try
-
-
     End Sub
 
     Private Sub bntBaixo_Click(sender As Object, e As EventArgs) Handles bntBaixo.Click
@@ -195,7 +183,6 @@ Public Class Layout_boletos
     End Sub
 
     Private Sub ListCampos_Click(sender As Object, e As EventArgs) Handles ListCampos.Click
-
         Dim texto As String
         Dim valor As String()
         Dim separador() As Char = "="
@@ -235,7 +222,6 @@ Public Class Layout_boletos
         Catch ex As Exception
             MessageBox.Show("Nenhum item foi selecionado para alteração", "Alterar item", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try
-
     End Sub
 
 
@@ -243,7 +229,6 @@ Public Class Layout_boletos
 
 
     Private Sub btnImportar_Click(sender As Object, e As EventArgs) Handles btnImportar.Click
-
         Dim openFileDialog1 As New OpenFileDialog()
 
         openFileDialog1.Filter = "Documento de texto|*.txt"
@@ -281,8 +266,6 @@ Public Class Layout_boletos
         End If
     End Sub
 
-
-
     Private Sub btnAlterar_Click(sender As Object, e As EventArgs) Handles btnAlterar.Click
 
         If tbValor.TextLength = 0 Then
@@ -292,10 +275,5 @@ Public Class Layout_boletos
         End If
 
     End Sub
-
-
-
-
-
 
 End Class
